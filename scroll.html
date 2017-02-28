@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+	<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	body{
+		height: 1500px;
+		font-family: 'Sansita', sans-serif;
+	}
+/*Navbar styles*/
+	nav{
+		width: 100%;
+		position: fixed;
+	}
+	.navscrolled{
+		background-color: #57004d;
+		height: 25px;
+		font-size: 1.5rem;
+	}
+	.liscrolled{
+		padding: 0% 2%;
+	}
+	ul{
+		background-color: rgba(255,255,255,.5);
+		width: 100%;
+		list-style: none;
+		position: fixed;
+		display: flex;
+		padding: 1%;
+		height: 80px;
+		color: #fff;
+		text-shadow: 1px 1px #000;
+		font-size: 2rem;
+
+		transition:1s ease-out;
+
+	}
+	li{
+		padding: 2% 1% 0 2%;
+	}
+	li a{
+		text-decoration:none;
+		color: #fff;
+		text-shadow: 1px 1px #000;
+	}
+	.left{
+		left:0;
+		width: 20%;
+	}
+	.center{
+		width: 30%;
+		right: 30%;
+	}
+	.right{
+		display: flex;
+		right: 0;
+		width:50%;
+	}
+	.logo{
+		width: 50%;
+		padding: 0;
+		transition: 2s;
+	}
+	#logo{
+		padding: 0;
+	}
+	.showlogo{
+		display: none;
+
+	}
+
+/*Navbar styles*/
+
+	.main{
+		background-image:  url('/images/design.jpeg');
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+		text-align: center;
+		height: 800px;
+	}
+	.serv{
+		padding: 1%;
+	}
+
+	.row{
+		display: flex;
+		width: 100%;
+	}
+	.col{
+		
+		width: 25%;
+		justify-content: center;	
+		padding: 1%;	
+	}
+	.col10{
+		width: 10%;
+	}
+	.col20{
+		width: 20%;
+	}
+	.col30{
+		width: 30%;
+	}
+	.col40{
+		width: 40%;
+	}
+	.col50{
+		width: 50%;
+	}
+	.col70{
+		width: 70%;
+	}
+
+	.icono{
+		background:#57004d;
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		color: white;
+		margin: 0 auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	.servicio{
+		display: block;
+	}
+
+	.title{
+		margin-top: 5%;
+		margin-bottom: 1%;
+		font-size:2rem;
+	}
+	.title2{
+		margin-top: 5%;
+		margin-bottom: 1%;
+		font-size:3rem;
+	}
+	/*parallax*/
+	.parallax{
+		background-image:  url('/images/otra.jpeg');
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+		text-align: center;
+		height: 700px;
+	}
+	/*parallax*/
+	.about{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.adriss{
+		border-radius: 50%;
+		width: 100%;
+	}
+	.adritext{
+		font-size: 1.5rem;
+	}
+
+</style>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<div class="left" id="navbar">
+			<li id="logoname" class="showlogo"><a href="">DrissDesign</a></li>
+			<li id="logo"><a href=""><img src="/images/logo.png" alt="LOGO" class="logo"></a></li>
+		</div>
+		<div class="center"></div>
+		<div class="right">
+			
+			<li><a href="#serv">Servicios</a></li>
+			<li><a href="#portafolio">Portafolio</a></li>
+			<li><a href="#about">Me</a></li>
+			<li><a href="">Otro</a></li>
+		</div>
+	</ul>
+</nav>
+
+<section>
+	<div class="main">
+	</div>
+
+	<div class="serv" id="serv">
+		<h2 align="center" class="title2">Servicios</h2>
+		<div class="row">
+			<div class="col">
+				<div class="icono">
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+				</div>
+				<h3 class="title">sisisi</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+				
+			</div>
+			<div class="col">
+				<div class="icono">
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+				</div>
+				<h3 class="title">sisisi</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+				
+			</div>
+			<div class="col">
+				<div class="icono">
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+				</div>
+				<h3 class="title">sisisi</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+				
+			</div>
+			<div class="col">
+				<div class="icono">
+					<i class="fa fa-paint-brush" aria-hidden="true"></i>
+				</div>
+				<h3 class="title">sisisi</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. </p>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="parallax">
+		
+	</div>
+
+	<div id="about" class="about">
+		<div class="row">
+			<div class="col col40">
+				<img src="/images/addriss.jpg" class="adriss">
+			</div>
+			<div class="col col50">
+				<h2 class="title2">Adriana M. Anaya</h2>
+				<p class="adritext">CEO de <strong>DrissDesign</strong> y CoFounder de <strong>ANails</strong>. <br>Amante de la música, el baile y la comida.</p>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<footer>
+	<div class="row"></div>
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 300) {
+      $("ul").addClass("navscrolled");
+      $("#logo").addClass("showlogo");
+      $("#logoname").removeClass("showlogo");
+      $('li').addClass("liscrolled")
+      
+    } else {
+      $("#logo").removeClass("showlogo");
+      $("#logoname").addClass("showlogo");
+      $("ul").removeClass("navscrolled");
+      $('li').removeClass("liscrolled")
+    }
+  });
+});
+</script>
+
+</body>
+</html>
